@@ -1,4 +1,4 @@
-{% set version = "0.9.9.post1" %}
+{% set version = "1.0.0.post2" %}
 
 package:
   name: cenpy
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cenpy/cenpy-{{ version }}.tar.gz
-  sha256: 42c73367ff0f9aab8a87d52321de3482c549cea25173fc0dd94302f5e07a7621
+  sha256: 0a89f3cd1aba4578c54f9dd2dc83c9d45e6769d67155aa309aa8ca0698abfc19
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -20,7 +20,12 @@ requirements:
   run:
     - python >=3.5
     - pandas
+    - geopandas
     - requests
+    - rtree
+    - numpy
+    - six
+    - fuzzywuzzy
     - libpysal
 
 test:
@@ -28,7 +33,7 @@ test:
     - cenpy
 
 about:
-  home: https://github.com/ljwolf/cenpy
+  home: https://github.com/cenpy-devs/cenpy
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE

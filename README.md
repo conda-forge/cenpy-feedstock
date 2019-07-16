@@ -1,7 +1,7 @@
 About cenpy
 ===========
 
-Home: https://github.com/ljwolf/cenpy
+Home: https://github.com/cenpy-devs/cenpy
 
 Package license: BSD-3-Clause
 
@@ -116,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ljwolf](https://github.com/ljwolf/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
