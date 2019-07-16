@@ -20,7 +20,12 @@ requirements:
   run:
     - python >=3.5
     - pandas
+    - geopandas
     - requests
+    - rtree
+    - numpy
+    - six
+    - fuzzywuzzy
     - libpysal
 
 test:
@@ -28,7 +33,7 @@ test:
     - cenpy
 
 about:
-  home: https://github.com/ljwolf/cenpy
+  home: https://github.com/cenpy-devs/cenpy
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
