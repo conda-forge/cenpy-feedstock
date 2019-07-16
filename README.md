@@ -1,7 +1,7 @@
 About cenpy
 ===========
 
-Home: https://github.com/ljwolf/cenpy
+Home: https://github.com/cenpy-devs/cenpy
 
 Package license: BSD-3-Clause
 
