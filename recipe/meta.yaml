@@ -1,4 +1,4 @@
-{% set version = "1.0.0.post2" %}
+{% set version = "1.0.0.post4" %}
 
 package:
   name: cenpy
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cenpy/cenpy-{{ version }}.tar.gz
-  sha256: 0a89f3cd1aba4578c54f9dd2dc83c9d45e6769d67155aa309aa8ca0698abfc19
+  sha256: 43d24ffbff6d1c2879a05499f2ac0776f10803524d466614cdec2cd3c9e9ff20
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "Explore and download data from Census APIs"
+  summary: Explore and download data from Census APIs
 
 extra:
   recipe-maintainers:
