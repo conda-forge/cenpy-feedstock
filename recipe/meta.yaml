@@ -1,4 +1,4 @@
-{% set version = "1.0.0.post4" %}
+{% set version = "1.0.1" %}
 
 package:
   name: cenpy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cenpy/cenpy-{{ version }}.tar.gz
-  sha256: 43d24ffbff6d1c2879a05499f2ac0776f10803524d466614cdec2cd3c9e9ff20
+  sha256: 077fd2cc6d69b99da3d85b16a560087e3e455e67a43e934fe5fa1f84c4635f58
 
 build:
   number: 0
