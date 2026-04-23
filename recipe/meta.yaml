@@ -5,20 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cenpy/cenpy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/cenpy/cenpy-{{ version }}.tar.gz
   sha256: 077fd2cc6d69b99da3d85b16a560087e3e455e67a43e934fe5fa1f84c4635f58
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - pandas
     - geopandas
     - requests
@@ -29,6 +30,8 @@ requirements:
     - libpysal
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cenpy
 
